@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliab Efrem — Data Science @ UVA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#F5F4F0;}
+  ::selection{background:#2340C8;color:#fff;}
+  a{color:#2340C8;}
+  a:hover{color:#17191E;}
+  [data-reveal]{transition:opacity 0.5s ease, transform 0.5s cubic-bezier(0.2,0.7,0.3,1);}
+  @media (max-width: 880px){
+    [data-sec]{grid-template-columns:1fr !important;gap:24px !important;}
+    [data-hero]{grid-template-columns:1fr !important;gap:36px !important;padding-left:24px !important;padding-right:24px !important;}
+    [data-hero] > div:last-child{max-width:340px;}
+    [data-about]{grid-template-columns:1fr !important;gap:28px !important;}
+    [data-row]{grid-template-columns:1fr !important;gap:10px !important;}
+    [data-grid3]{grid-template-columns:repeat(2,1fr) !important;}
+    [data-grid4]{grid-template-columns:repeat(2,1fr) !important;}
+    [data-pad]{padding-left:24px !important;padding-right:24px !important;}
+    [data-nav]{padding-left:24px !important;padding-right:24px !important;}
+    [data-nav] a{font-size:10.5px !important;}
+  }
+  @media (max-width: 560px){
+    [data-h1]{font-size:40px !important;}
+    [data-grid3]{grid-template-columns:1fr !important;}
+  }
+  .hv1:hover{color:#17191E;border-color:#17191E;}
+  .hv2:hover{color:#17191E;border-color:#17191E;}
+  .hv3:hover{color:#17191E;border-color:#17191E;}
+  .hv4:hover{color:#17191E;border-color:#17191E;}
+  .hv5:hover{color:#17191E;border-color:#17191E;}
+  .hv6:hover{color:#17191E;border-color:#17191E;}
+  .hv7:hover{background:#17191E;}
+  .hv8:hover{border-color:#17191E;color:#17191E;}
+  .hv9:hover{border-color:#2340C8;}
+  .hv10:hover{border-color:#2340C8;}
+  .hv11:hover{border-color:#2340C8;}
+  .hv12:hover{border-color:#2340C8;}
+  .hv13:hover{padding-left:8px;color:#fff;}
+  .hv14:hover{padding-left:8px;color:#fff;}
+  .hv15:hover{padding-left:8px;color:#fff;}
+  .hv16:hover{padding-left:8px;color:#fff;}
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Archivo',sans-serif;color:#17191E;background:#F5F4F0;min-height:100vh;">
+
+  <div style="position:sticky;top:0;z-index:60;background:#F5F4F0;border-bottom:1px solid #E2E1DC;">
+    <div data-nav="" style="max-width:1140px;margin:0 auto;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="#top" style="font:600 15px/1 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.01em;text-decoration:none;">Eliab Efrem</a>
+      <div style="display:flex;gap:24px;align-items:center;font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;flex-wrap:wrap;justify-content:flex-end;">
+        <a href="#work" class="hv1" style="color:#565B66;text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;">Work</a>
+        <a href="#experience" class="hv2" style="color:#565B66;text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;">Experience</a>
+        <a href="#involvements" class="hv3" style="color:#565B66;text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;">Involvements</a>
+        <a href="#skills" class="hv4" style="color:#565B66;text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;">Skills</a>
+        <a href="#about" class="hv5" style="color:#565B66;text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;">About</a>
+        <a href="#offtheclock" class="hv6" style="color:#565B66;text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent;transition:color 0.15s,border-color 0.15s;">Off the clock</a>
+        <a href="#contact" style="color:#2340C8;text-decoration:none;padding-bottom:3px;border-bottom:1px solid #2340C8;">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="top" data-hero="" style="max-width:1140px;margin:0 auto;padding:76px 40px 64px;display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:start;">
+    <div>
+      <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.16em;text-transform:uppercase;color:#A33B2C;margin-bottom:26px;">Data Science · University of Virginia '28</div>
+      <h1 data-h1="" style="font:600 60px/1.02 'Archivo',sans-serif;color:#17191E;margin:0 0 22px;letter-spacing:-0.035em;">Eliab Efrem</h1>
+      <p style="font:400 19px/1.65 'Source Serif 4',serif;color:#565B66;margin:0 0 32px;max-width:48ch;text-wrap:pretty;">Data Science student at the University of Virginia. I build data systems end to end — pipeline, model, API, and interface.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="#work" class="hv7" style="font:500 13px/1 'Archivo',sans-serif;background:#2340C8;color:#fff;padding:15px 24px;border-radius:3px;text-decoration:none;letter-spacing:0.01em;transition:background 0.15s;">See my work</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="hv8" style="font:500 13px/1 'Archivo',sans-serif;background:transparent;color:#17191E;border:1px solid #C9C7C0;padding:15px 24px;border-radius:3px;text-decoration:none;letter-spacing:0.01em;transition:border-color 0.15s,color 0.15s;">Résumé (PDF)</a>
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:34px;font:400 12.5px/1 'Archivo',sans-serif;color:#8A8F9A;letter-spacing:0.02em;">
+        <span>Charlottesville, VA</span>
+        <span style="color:#D5D3CC;">/</span>
+        <span>Woodbridge, VA</span>
+        <span style="color:#D5D3CC;">/</span>
+        <span>Analytics &amp; Systems</span>
+      </div>
+    </div>
+    <div>
+    <img src="headshot.jpg" alt="Eliab Efrem" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 18%;display:block;border:1px solid #E2E1DC;border-radius:3px;background:#fff;margin-bottom:14px;">
+    <div style="background:#fff;border:1px solid #E2E1DC;border-radius:3px;padding:24px;">
+      <div style="font:500 10.5px/1 'Archivo',sans-serif;letter-spacing:0.14em;text-transform:uppercase;color:#8A8F9A;margin-bottom:18px;">Currently</div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div>
+          <div style="font:600 14.5px/1.35 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.01em;">Senior Analyst</div>
+          <div style="font:400 13px/1.5 'Archivo',sans-serif;color:#8A8F9A;margin-top:2px;">BlackFin Investment Group</div>
+        </div>
+        <div style="height:1px;background:#EDECE7;"></div>
+        <div>
+          <div style="font:600 14.5px/1.35 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.01em;">Consultant</div>
+          <div style="font:400 13px/1.5 'Archivo',sans-serif;color:#8A8F9A;margin-top:2px;">Robertson Media Center, UVA</div>
+        </div>
+        <div style="height:1px;background:#EDECE7;"></div>
+        <div>
+          <div style="font:600 14.5px/1.35 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.01em;">Licensed Referee</div>
+          <div style="font:400 13px/1.5 'Archivo',sans-serif;color:#8A8F9A;margin-top:2px;">U.S. Soccer · 110+ matches</div>
+        </div>
+      </div>
+      <div style="margin-top:22px;padding-top:18px;border-top:1px solid #EDECE7;font:500 12px/1.5 'Archivo',sans-serif;color:#2340C8;">Open to Summer 2027 internships</div>
+    </div>
+    </div>
+  </div>
+
+  <div id="work" data-pad="" style="max-width:1140px;margin:0 auto;padding:0 40px;">
+    <div data-sec="" style="display:grid;grid-template-columns:200px 1fr;gap:56px;border-top:1px solid #D8D6CF;padding:56px 0;">
+      <div data-reveal="">
+        <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.14em;color:#2340C8;margin-bottom:14px;">01</div>
+        <h2 style="font:600 26px/1.15 'Archivo',sans-serif;color:#17191E;margin:0 0 12px;letter-spacing:-0.03em;">Projects</h2>
+        <p style="font:400 14.5px/1.6 'Source Serif 4',serif;color:#8A8F9A;margin:0;text-wrap:pretty;">Full-stack applications and applied analysis.</p>
+      </div>
+      <div>
+        <div data-reveal="" style="padding-bottom:40px;border-bottom:1px solid #E2E1DC;margin-bottom:40px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:12px;flex-wrap:wrap;">
+            <h3 style="font:600 22px/1.3 'Archivo',sans-serif;color:#17191E;margin:0;letter-spacing:-0.025em;">Used-Car Market Intelligence &amp; Deal Analyzer</h3>
+            <span style="font:500 11.5px/1 'Archivo',sans-serif;color:#A33B2C;letter-spacing:0.06em;white-space:nowrap;">AUG – SEP 2026</span>
+          </div>
+          <p style="font:400 17px/1.7 'Source Serif 4',serif;color:#565B66;margin:0 0 22px;max-width:64ch;text-wrap:pretty;">A full-stack platform that ingests used-car listings and returns ML-powered fair-value estimates, market comparisons, and a 0–100 Deal Score for spotting underpriced vehicles.</p>
+          <div style="display:flex;gap:0;flex-wrap:wrap;border:1px solid #E2E1DC;border-radius:3px;background:#fff;margin-bottom:22px;">
+            <div style="flex:1;min-width:120px;padding:14px 18px;border-right:1px solid #E2E1DC;"><div style="font:600 17px/1 'Archivo',sans-serif;color:#17191E;">0–100</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">Deal score</div></div>
+            <div style="flex:1;min-width:120px;padding:14px 18px;border-right:1px solid #E2E1DC;"><div style="font:600 17px/1 'Archivo',sans-serif;color:#17191E;">127</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">Backend tests</div></div>
+            <div style="flex:1;min-width:120px;padding:14px 18px;"><div style="font:600 17px/1 'Archivo',sans-serif;color:#17191E;">REST</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">API driven</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:22px;">
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">01</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Built an end-to-end scikit-learn valuation pipeline: data processing, feature engineering, and model inference</span></div>
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">02</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Connected the ML system to an interactive React dashboard via a REST API</span></div>
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">03</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Added automated deal analysis, database persistence, and filtering for a production-style app</span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;">
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Python</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">scikit-learn</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">React</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">REST API</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">pytest</span>
+          </div>
+          <div style="display:flex;gap:24px;flex-wrap:wrap;font:500 13px/1 'Archivo',sans-serif;">
+            <a href="https://github.com/EfremE24/used-car-deal-analyzer" target="_blank" rel="noopener" class="hv9" style="color:#2340C8;text-decoration:none;border-bottom:1px solid #B9C3EE;padding-bottom:3px;transition:border-color 0.15s;">GitHub ↗</a>
+            <a href="https://used-car-deal-analyzer.vercel.app/" target="_blank" rel="noopener" class="hv10" style="color:#2340C8;text-decoration:none;border-bottom:1px solid #B9C3EE;padding-bottom:3px;transition:border-color 0.15s;">Live demo ↗</a>
+          </div>
+        </div>
+
+        <div data-reveal="" style="padding-bottom:40px;border-bottom:1px solid #E2E1DC;margin-bottom:40px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:12px;flex-wrap:wrap;">
+            <h3 style="font:600 22px/1.3 'Archivo',sans-serif;color:#17191E;margin:0;letter-spacing:-0.025em;">Air Fryer Market Demand Estimation</h3>
+            <span style="font:500 11.5px/1 'Archivo',sans-serif;color:#A33B2C;letter-spacing:0.06em;white-space:nowrap;">MAY 2026</span>
+          </div>
+          <p style="font:400 17px/1.7 'Source Serif 4',serif;color:#565B66;margin:0 0 22px;max-width:64ch;text-wrap:pretty;">A logit-style demand model estimating how price, ratings, and features drive market share across the air fryer category, then translating that into pricing strategy.</p>
+          <div style="display:flex;gap:0;flex-wrap:wrap;border:1px solid #E2E1DC;border-radius:3px;background:#fff;margin-bottom:22px;max-width:340px;">
+            <div style="flex:1;min-width:120px;padding:14px 18px;border-right:1px solid #E2E1DC;"><div style="font:600 17px/1 'Archivo',sans-serif;color:#17191E;">10</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">Brands</div></div>
+            <div style="flex:1;min-width:120px;padding:14px 18px;"><div style="font:600 17px/1 'Archivo',sans-serif;color:#17191E;">2019–23</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">Years</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:22px;">
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">01</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Built a linear-regression demand model to estimate price, rating, and feature effects on market share</span></div>
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">02</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Derived brand-level markups and unit costs by applying estimated price elasticity to a firm's pricing condition</span></div>
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">03</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Packaged findings into a pricing and product-strategy summary deck</span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;">
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Python</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Pandas</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Regression</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Jupyter</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Matplotlib</span>
+          </div>
+          <a href="https://github.com/EfremE24/Demand-Estimation" target="_blank" rel="noopener" class="hv11" style="font:500 13px/1 'Archivo',sans-serif;color:#2340C8;text-decoration:none;border-bottom:1px solid #B9C3EE;padding-bottom:3px;transition:border-color 0.15s;">GitHub ↗</a>
+        </div>
+
+        <div data-reveal="">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:12px;flex-wrap:wrap;">
+            <h3 style="font:600 22px/1.3 'Archivo',sans-serif;color:#17191E;margin:0;letter-spacing:-0.025em;">Weather API Chatbot</h3>
+            <span style="font:500 11.5px/1 'Archivo',sans-serif;color:#A33B2C;letter-spacing:0.06em;white-space:nowrap;">JAN 2026</span>
+          </div>
+          <p style="font:400 17px/1.7 'Source Serif 4',serif;color:#565B66;margin:0 0 22px;max-width:64ch;text-wrap:pretty;">A lightweight Flask API with a browser-based chatbot front end: give it a temperature, it classifies conditions across six tiers — freezing to dangerously hot — and returns a plain-language message.</p>
+          <div style="display:flex;gap:0;flex-wrap:wrap;border:1px solid #E2E1DC;border-radius:3px;background:#fff;margin-bottom:22px;">
+            <div style="flex:1;min-width:120px;padding:14px 18px;border-right:1px solid #E2E1DC;"><div style="font:600 17px/1 'Archivo',sans-serif;color:#17191E;">6</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">Categories</div></div>
+            <div style="flex:1;min-width:120px;padding:14px 18px;border-right:1px solid #E2E1DC;"><div style="font:600 17px/1 'Archivo',sans-serif;color:#17191E;">Docker</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">One command</div></div>
+            <div style="flex:1;min-width:120px;padding:14px 18px;"><div style="font:500 17px/1 'IBM Plex Mono',monospace;color:#17191E;">/health</div><div style="font:400 11px/1 'Archivo',sans-serif;letter-spacing:0.08em;text-transform:uppercase;color:#8A8F9A;margin-top:8px;">Status check</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:22px;">
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">01</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Built a <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#17191E;">/weather</span> endpoint that classifies input temperatures, plus <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#17191E;">/health</span> for uptime checks</span></div>
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">02</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Wrote a one-command <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#17191E;">run.sh</span> that builds the Docker image and launches the API with zero manual setup</span></div>
+            <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">03</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Kept the service fully stateless with input validation and error handling for invalid values</span></div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;">
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Python</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Flask</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">Docker</span>
+            <span style="font:400 12px/1 'Archivo',sans-serif;color:#565B66;border:1px solid #E2E1DC;background:#fff;padding:7px 11px;border-radius:3px;">REST API</span>
+          </div>
+          <a href="https://github.com/EfremE24/weather-api" target="_blank" rel="noopener" class="hv12" style="font:500 13px/1 'Archivo',sans-serif;color:#2340C8;text-decoration:none;border-bottom:1px solid #B9C3EE;padding-bottom:3px;transition:border-color 0.15s;">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="experience" data-pad="" style="max-width:1140px;margin:0 auto;padding:0 40px;">
+    <div data-sec="" style="display:grid;grid-template-columns:200px 1fr;gap:56px;border-top:1px solid #D8D6CF;padding:56px 0;">
+      <div data-reveal="">
+        <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.14em;color:#2340C8;margin-bottom:14px;">02</div>
+        <h2 style="font:600 26px/1.15 'Archivo',sans-serif;color:#17191E;margin:0 0 12px;letter-spacing:-0.03em;">Experience</h2>
+        <p style="font:400 14.5px/1.6 'Source Serif 4',serif;color:#8A8F9A;margin:0;text-wrap:pretty;">Two roles, both current.</p>
+      </div>
+      <div>
+        <div data-reveal="" data-row="" style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding-bottom:34px;border-bottom:1px solid #E2E1DC;margin-bottom:34px;">
+          <div style="font:500 11.5px/1.6 'Archivo',sans-serif;color:#A33B2C;letter-spacing:0.05em;">AUG 2026 —<br>PRESENT</div>
+          <div>
+            <div style="font:600 19px/1.3 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.025em;">Consultant</div>
+            <div style="font:400 14px/1.5 'Archivo',sans-serif;color:#8A8F9A;margin:5px 0 16px;">Robertson Media Center, University of Virginia</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">01</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Consulted with faculty, staff, and students on equipment and software for video, audio, 3D, and VR/AR projects</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">02</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Staffed the front desk and floor, keeping consultants available for walk-in patrons</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">03</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Maintained accurate checkout, return, and tracking of multi-piece media equipment inventory</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-reveal="" data-row="" style="display:grid;grid-template-columns:120px 1fr;gap:32px;">
+          <div style="font:500 11.5px/1.6 'Archivo',sans-serif;color:#A33B2C;letter-spacing:0.05em;">OCT 2022 —<br>PRESENT</div>
+          <div>
+            <div style="font:600 19px/1.3 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.025em;">Licensed Soccer Referee</div>
+            <div style="font:400 14px/1.5 'Archivo',sans-serif;color:#8A8F9A;margin:5px 0 16px;">U.S. Soccer · Ages U10–U19</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">01</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Officiated 110+ competitive matches across age groups, making quick decisions under pressure</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">02</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Communicated rules and calls clearly to players, coaches, and spectators to resolve disputes in real time</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">03</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Managed up to 6 back-to-back matches, maintaining fitness, focus, and reliability throughout</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="involvements" data-pad="" style="max-width:1140px;margin:0 auto;padding:0 40px;">
+    <div data-sec="" style="display:grid;grid-template-columns:200px 1fr;gap:56px;border-top:1px solid #D8D6CF;padding:56px 0;">
+      <div data-reveal="">
+        <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.14em;color:#2340C8;margin-bottom:14px;">03</div>
+        <h2 style="font:600 26px/1.15 'Archivo',sans-serif;color:#17191E;margin:0 0 12px;letter-spacing:-0.03em;">Involvements</h2>
+        <p style="font:400 14.5px/1.6 'Source Serif 4',serif;color:#8A8F9A;margin:0;text-wrap:pretty;">Clubs and organizations at UVA.</p>
+      </div>
+      <div>
+        <div data-reveal="" data-row="" style="display:grid;grid-template-columns:120px 1fr;gap:32px;padding-bottom:34px;border-bottom:1px solid #E2E1DC;margin-bottom:34px;">
+          <div style="font:500 11.5px/1.6 'Archivo',sans-serif;color:#A33B2C;letter-spacing:0.05em;">SEP 2024 —<br>PRESENT</div>
+          <div>
+            <div style="font:600 19px/1.3 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.025em;">BlackFin Investment Group</div>
+            <div style="font:400 14px/1.5 'Archivo',sans-serif;color:#8A8F9A;margin:5px 0 16px;">Senior Analyst</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">01</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Selected through a competitive application and interview process to join an investment club for minority students in finance and business</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">02</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Weekly technical workshops on financial modeling and research, led by professionals and alumni</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">03</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Ongoing mentorship from alumni across investment banking, management, and consulting</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-reveal="" data-row="" style="display:grid;grid-template-columns:120px 1fr;gap:32px;">
+          <div style="font:500 11.5px/1.6 'Archivo',sans-serif;color:#A33B2C;letter-spacing:0.05em;">SEP 2024 —<br>PRESENT</div>
+          <div>
+            <div style="font:600 19px/1.3 'Archivo',sans-serif;color:#17191E;letter-spacing:-0.025em;">Ethiopian &amp; Eritrean Student Association</div>
+            <div style="font:400 14px/1.5 'Archivo',sans-serif;color:#8A8F9A;margin:5px 0 16px;">Special Events Committee</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">01</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Helped plan and coordinate cultural events, including Taste of the East, celebrating Ethiopian and Eritrean heritage</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">02</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Collaborated with a team on event logistics — venue booking, budgeting, and catering</span></div>
+              <div style="display:flex;gap:14px;align-items:flex-start;"><span style="font:500 11px/1.7 'Archivo',sans-serif;color:#C9C7C0;flex-shrink:0;">03</span><span style="font:400 15px/1.65 'Archivo',sans-serif;color:#565B66;">Supported day-of execution, keeping setup, transitions, and guest experience running smoothly</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="skills" data-pad="" style="max-width:1140px;margin:0 auto;padding:0 40px;">
+    <div data-sec="" style="display:grid;grid-template-columns:200px 1fr;gap:56px;border-top:1px solid #D8D6CF;padding:56px 0;">
+      <div data-reveal="">
+        <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.14em;color:#2340C8;margin-bottom:14px;">04</div>
+        <h2 style="font:600 26px/1.15 'Archivo',sans-serif;color:#17191E;margin:0 0 12px;letter-spacing:-0.03em;">Skills</h2>
+        <p style="font:400 14.5px/1.6 'Source Serif 4',serif;color:#8A8F9A;margin:0;text-wrap:pretty;">What I work in day to day.</p>
+      </div>
+      <div data-reveal="">
+        <div data-row="" style="display:grid;grid-template-columns:170px 1fr;gap:32px;padding-bottom:22px;border-bottom:1px solid #E2E1DC;margin-bottom:22px;align-items:start;">
+          <div style="font:500 11px/1.5 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;padding-top:6px;">Languages</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Python</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">SQL</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Java</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Linux</span>
+          </div>
+        </div>
+        <div data-row="" style="display:grid;grid-template-columns:170px 1fr;gap:32px;padding-bottom:22px;border-bottom:1px solid #E2E1DC;margin-bottom:22px;align-items:start;">
+          <div style="font:500 11px/1.5 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;padding-top:6px;">Libraries &amp; Frameworks</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Pandas</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">NumPy</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Matplotlib</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Seaborn</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Flask</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">scikit-learn</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">JSON</span>
+          </div>
+        </div>
+        <div data-row="" style="display:grid;grid-template-columns:170px 1fr;gap:32px;align-items:start;">
+          <div style="font:500 11px/1.5 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;padding-top:6px;">Developer Tools</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Git</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">GitHub</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">VS Code</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Cursor</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">PyCharm</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Colab</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Anaconda</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Azure</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:8px 12px;border-radius:3px;">Positron</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" data-pad="" style="max-width:1140px;margin:0 auto;padding:0 40px;">
+    <div data-sec="" style="display:grid;grid-template-columns:200px 1fr;gap:56px;border-top:1px solid #D8D6CF;padding:56px 0;">
+      <div data-reveal="">
+        <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.14em;color:#2340C8;margin-bottom:14px;">05</div>
+        <h2 style="font:600 26px/1.15 'Archivo',sans-serif;color:#17191E;margin:0;letter-spacing:-0.03em;">About</h2>
+      </div>
+      <div data-reveal="" data-about="" style="display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start;">
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <p style="font:400 17.5px/1.75 'Source Serif 4',serif;color:#3C4048;margin:0;max-width:58ch;text-wrap:pretty;">I'm a third-year <strong style="color:#17191E;font-weight:600;">Data Science major (Analytics &amp; Systems) with a Business minor</strong> at the University of Virginia, graduating in 2028. Most of my work sits between analysis and engineering: I'd rather take a project through to a working application than stop at a notebook that shows the model performs well.</p>
+          <p style="font:400 17.5px/1.75 'Source Serif 4',serif;color:#3C4048;margin:0;max-width:58ch;text-wrap:pretty;">Outside of class, I'm a <strong style="color:#17191E;font-weight:600;">Senior Analyst at BlackFin Investment Group</strong>, where I work on financial modeling and research alongside alumni in banking and consulting. I also work at UVA's <strong style="color:#17191E;font-weight:600;">Robertson Media Center</strong>, advising students and faculty on video, audio, and VR/AR equipment.</p>
+          <p style="font:400 17.5px/1.75 'Source Serif 4',serif;color:#3C4048;margin:0;max-width:58ch;text-wrap:pretty;">I've also been a <strong style="color:#17191E;font-weight:600;">licensed U.S. Soccer referee since 2022</strong>, with 110+ matches across age groups. It's the closest thing I've had to real practice at making a decision quickly, explaining it clearly, and standing behind it when people disagree.</p>
+        </div>
+        <div style="border-left:2px solid #2340C8;padding:4px 0 4px 22px;">
+          <div style="font:500 10.5px/1 'Archivo',sans-serif;letter-spacing:0.14em;text-transform:uppercase;color:#8A8F9A;margin-bottom:12px;">Honor</div>
+          <h4 style="font:600 17px/1.35 'Archivo',sans-serif;color:#17191E;margin:0 0 10px;letter-spacing:-0.02em;">Davis First Generation Scholarship</h4>
+          <p style="font:400 15px/1.65 'Source Serif 4',serif;color:#565B66;margin:0;">Awarded to students who identify as the first in their family to attend higher education.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="offtheclock" data-pad="" style="max-width:1140px;margin:0 auto;padding:0 40px;">
+    <div data-sec="" style="display:grid;grid-template-columns:200px 1fr;gap:56px;border-top:1px solid #D8D6CF;padding:56px 0;">
+      <div data-reveal="">
+        <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.14em;color:#2340C8;margin-bottom:14px;">06</div>
+        <h2 style="font:600 26px/1.15 'Archivo',sans-serif;color:#17191E;margin:0 0 12px;letter-spacing:-0.03em;">Off the Clock</h2>
+        <p style="font:400 14.5px/1.6 'Source Serif 4',serif;color:#8A8F9A;margin:0;text-wrap:pretty;">Sports, history, gaming, and travel.</p>
+      </div>
+      <div>
+        <div data-reveal="" style="margin-bottom:38px;">
+          <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;margin-bottom:16px;">Teams I follow</div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;">
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #E2E1DC;border-radius:3px;padding:11px 18px 11px 11px;">
+              <img src="team-manchester-united.png" alt="Manchester United crest" style="width:32px;height:32px;object-fit:contain;display:block;">
+              <div><div style="font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Manchester United</div><div style="font:400 11.5px/1.3 'Archivo',sans-serif;color:#8A8F9A;margin-top:2px;">Premier League</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #E2E1DC;border-radius:3px;padding:11px 18px 11px 11px;">
+              <img src="team-commanders.png" alt="Washington Commanders logo" style="width:32px;height:32px;object-fit:contain;display:block;">
+              <div><div style="font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Washington Commanders</div><div style="font:400 11.5px/1.3 'Archivo',sans-serif;color:#8A8F9A;margin-top:2px;">NFL</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #E2E1DC;border-radius:3px;padding:11px 18px 11px 11px;">
+              <img src="team-wizards.png" alt="Washington Wizards logo" style="width:32px;height:32px;object-fit:contain;display:block;">
+              <div><div style="font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Washington Wizards</div><div style="font:400 11.5px/1.3 'Archivo',sans-serif;color:#8A8F9A;margin-top:2px;">NBA</div></div>
+            </div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;font:400 14px/1.5 'Archivo',sans-serif;color:#565B66;">
+            <span style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;">Favorite players</span>
+            <span>Jayden Daniels</span><span style="color:#D5D3CC;">/</span>
+            <span>John Wall</span><span style="color:#D5D3CC;">/</span>
+            <span>Bruno Fernandes</span>
+          </div>
+        </div>
+
+        <div data-reveal="" style="margin-bottom:38px;">
+          <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;margin-bottom:16px;">On repeat</div>
+          <div data-grid3="" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:560px;">
+            <div>
+              <img src="poster-vikings.png" alt="Vikings poster" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px;display:block;border:1px solid #E2E1DC;">
+              <div style="margin-top:10px;font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Vikings</div>
+              <div style="font:400 11.5px/1.3 'Archivo',sans-serif;color:#8A8F9A;margin-top:3px;">TV · History drama</div>
+            </div>
+            <div>
+              <img src="poster-snowfall.png" alt="Snowfall poster" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px;display:block;border:1px solid #E2E1DC;">
+              <div style="margin-top:10px;font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Snowfall</div>
+              <div style="font:400 11.5px/1.3 'Archivo',sans-serif;color:#8A8F9A;margin-top:3px;">TV · Crime drama</div>
+            </div>
+            <div>
+              <img src="poster-home-alone-2.png" alt="Home Alone 2 poster" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px;display:block;border:1px solid #E2E1DC;">
+              <div style="margin-top:10px;font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Home Alone 2</div>
+              <div style="font:400 11.5px/1.3 'Archivo',sans-serif;color:#8A8F9A;margin-top:3px;">Movie · Holiday comedy</div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal="" style="margin-bottom:38px;">
+          <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;margin-bottom:16px;">What I'm playing</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:9px 14px;border-radius:3px;">EA FC</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:9px 14px;border-radius:3px;">NBA 2K</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:9px 14px;border-radius:3px;">Madden NFL</span>
+            <span style="font:400 13px/1 'Archivo',sans-serif;color:#17191E;border:1px solid #E2E1DC;background:#fff;padding:9px 14px;border-radius:3px;">Football Manager</span>
+          </div>
+        </div>
+
+        <div data-reveal="">
+          <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:#8A8F9A;margin-bottom:16px;">Places I've been</div>
+          <div data-grid4="" style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;">
+            <div>
+              <img src="travel-ethiopia.jpg" alt="Addis Ababa, Ethiopia" style="width:100%;aspect-ratio:3/4;object-fit:contain;background:#EDECE7;border-radius:3px;display:block;border:1px solid #E2E1DC;">
+              <div style="margin-top:10px;font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Ethiopia</div>
+            </div>
+            <div>
+              <img src="travel-switzerland.jpg" alt="Swiss Alps" style="width:100%;aspect-ratio:3/4;object-fit:contain;background:#EDECE7;border-radius:3px;display:block;border:1px solid #E2E1DC;">
+              <div style="margin-top:10px;font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Switzerland</div>
+            </div>
+            <div>
+              <img src="travel-sweden.jpg" alt="Gamla Stan, Stockholm" style="width:100%;aspect-ratio:3/4;object-fit:contain;background:#EDECE7;border-radius:3px;display:block;border:1px solid #E2E1DC;">
+              <div style="margin-top:10px;font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">Sweden</div>
+            </div>
+            <div>
+              <img src="travel-france.jpg" alt="Annecy, France" style="width:100%;aspect-ratio:3/4;object-fit:contain;background:#EDECE7;border-radius:3px;display:block;border:1px solid #E2E1DC;">
+              <div style="margin-top:10px;font:600 13.5px/1.3 'Archivo',sans-serif;color:#17191E;">France</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="contact" style="background:#2340C8;">
+    <div data-reveal="" data-sec="" data-pad="" style="max-width:1140px;margin:0 auto;padding:72px 40px;display:grid;grid-template-columns:200px 1fr;gap:56px;align-items:start;">
+      <div>
+        <div style="font:500 11px/1 'Archivo',sans-serif;letter-spacing:0.14em;color:rgba(255,255,255,0.6);margin-bottom:14px;">07</div>
+        <h2 style="font:600 26px/1.15 'Archivo',sans-serif;color:#fff;margin:0;letter-spacing:-0.03em;">Contact</h2>
+      </div>
+      <div>
+        <p style="font:400 22px/1.55 'Source Serif 4',serif;color:#fff;margin:0 0 32px;max-width:40ch;text-wrap:pretty;">Open to internship and full-time opportunities. The best way to reach me is email.</p>
+        <div style="display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(255,255,255,0.25);max-width:520px;">
+          <a href="mailto:mkj2va@virginia.edu" class="hv13" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.25);text-decoration:none;color:#fff;font:500 15px/1 'Archivo',sans-serif;transition:padding-left 0.15s;">
+            <span>mkj2va@virginia.edu</span><span style="font:400 12px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);">Email</span>
+          </a>
+          <a href="tel:12406653725" class="hv14" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.25);text-decoration:none;color:#fff;font:500 15px/1 'Archivo',sans-serif;transition:padding-left 0.15s;">
+            <span>(240) 665-3725</span><span style="font:400 12px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);">Phone</span>
+          </a>
+          <a href="https://www.linkedin.com/in/eliab-efrem-b0173b335/" target="_blank" rel="noopener" class="hv15" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.25);text-decoration:none;color:#fff;font:500 15px/1 'Archivo',sans-serif;transition:padding-left 0.15s;">
+            <span>eliab-efrem</span><span style="font:400 12px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);">LinkedIn ↗</span>
+          </a>
+          <a href="https://github.com/EfremE24" target="_blank" rel="noopener" class="hv16" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.25);text-decoration:none;color:#fff;font:500 15px/1 'Archivo',sans-serif;transition:padding-left 0.15s;">
+            <span>EfremE24</span><span style="font:400 12px/1 'Archivo',sans-serif;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.65);">GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div data-pad="" style="max-width:1140px;margin:0 auto;padding:26px 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font:400 12px/1 'Archivo',sans-serif;color:#8A8F9A;letter-spacing:0.04em;">
+      <span>Eliab Efrem · Charlottesville, VA · Woodbridge, VA</span>
+      <span>© 2026</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const revealNodes = document.querySelectorAll('[data-reveal]');
+  revealNodes.forEach(n => { n.style.opacity = '0'; n.style.transform = 'translateY(14px)'; });
+  const show = n => { n.style.opacity = '1'; n.style.transform = 'none'; };
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    revealNodes.forEach(n => io.observe(n));
+    setTimeout(() => revealNodes.forEach(show), 2500);
+  } else {
+    revealNodes.forEach(show);
+  }
+</script>
+</body>
+</html>
